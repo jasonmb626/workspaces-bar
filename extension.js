@@ -109,7 +109,7 @@ class WorkspacesBar extends PanelMenu.Button {
 			if (this.workspaces_names[ws_index]) {
 				this.ws_box.label.set_text("  " + this.workspaces_names[ws_index] + "  ");
 			} else {
-				this.ws_box.label.set_text("  " + (ws_index + 1) + "  ");
+				this.ws_box.label.set_text("" + (ws_index + 1));
 			}
 			this.ws_box.set_child(this.ws_box.label);
 			this.ws_box.connect('button-release-event', () => this._toggle_ws(ws_index) );
